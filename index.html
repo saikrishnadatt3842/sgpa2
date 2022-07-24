@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SGP CALCULATOR</title>
+        <meta name="viewport" content="widthdivice-width,initial-scal=2.0"/>
+
+        <style>
+            @media(max-width: 500px){
+                
+            }
+
+
+            input[type=text]{
+                transition: 2s;
+                border-radius: 3px;
+                width: 200px;
+                height: 20px;
+                box-shadow: 0 0 20px;
+            }
+            input[type=text]:focus{
+                border-color: dodgerblue;
+                box-shadow: 0 0 8px 0 blue;
+            }
+            body{
+                align-items: center;
+                background-size: cover;
+              background-image: url("images/pexels-george-milton-7034285.jpg");
+                font-weight: 200;
+            }
+            .crids{
+                display: block;
+                margin-bottom: 100px;
+                size: 20px;
+            }
+            .crids  input{
+                margin-top: 10px;
+            }
+            .three input{
+                margin-top: 10px;
+            }
+            .pfive{
+                margin-top: 100px;
+            }
+            .pfive input{
+                margin-top: 10px;
+            }
+            .result{
+                margin-top: 10px;
+            }
+           
+            .sai{
+                color: orangered;
+                font-size: 19px;
+            }
+            .btn{
+                background-color: cyan;
+                border-radius: 5px;
+                size: 30px;
+            }
+            .btn:hover{
+                background-color: chartreuse;
+                box-shadow: 2px 2px 2px blue;
+            }
+           
+            .crids{
+                background-color: rgba(0, 0, 0, 0.3);
+                width: 550px;
+                align-items: center;
+                text-align: center;
+                height: 130px;
+                margin-top: 50px;
+                border-radius: 10px;
+                box-shadow: 0 0 1px #333;
+            }
+            h1{
+                color: red;
+                font-size: 23px;
+            }
+            h2{
+                text-align: center;
+                font-size: 20px;
+                color: orangered;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h2>A+ = 10</h2>
+        <h2>A = 9</h2>
+        <h2>B = 8</h2>
+        <h2>C = 7</h2>
+        <h2>D = 6</h2>
+        <h2>E = 5</h2>
+        <h2>F = 0</h2>
+        <center>
+            
+     <form name="formcal">
+      <div id="alll">  
+         <div class="crids">
+             <h1>SGP Calculator</h1>
+       <div>  enter how many 3 cridts sub : <input type="text" id="inp1" name="txt1"> </div>
+        <div> enter how many 1.5 cridts sub: <input type="text" id="inp2" name="txt2"> </div>
+         </div>
+        
+      </div>  
+        <div class="three"> 
+            <div id="sub1" class="sub1">  suject 1: <input type="text" name="txt3"> </div>
+            <div id="sub2" class="sub2"> suject 2: <input type="text" name="txt4"> </div>
+            <div id="sub3" class="sub3">  suject 3: <input type="text" name="txt5"> </div>
+            <div id="sub4" class="sub4"> suject 4: <input type="text" name="txt6" > </div>
+            <div id="sub5" class="sub5"> suject 5: <input type="text" name="txt7" > </div>
+            <div id="sub6" class="sub6"> suject 6: <input type="text" name="txt8"></div>
+            <div id="sub7" class="sub7"> suject 7: <input type="text" name="txt9"> </div>
+        </div>
+        <div class="pfive">
+            <div  id="lab1" class="lab1"> lab 1: <input type="text" name="txt10"> </div>
+            <div id="lab2" class="lab2"> lab 2: <input type="text" name="txt11"> </div>
+            <div id="lab3" class="lab3"> lab 3: <input type="text" name="txt12"> </div>
+            <div id="lab4" class="lab4"> lab 4: <input type="text" name="txt13"> </div>
+        </div>
+      result : <input type="text" name="res" class="result">
+      <input type="button" class="btn" id="btn" onclick="sumval()" value="calculate" >
+     </form>
+        </center>
+        <p class="sai">copyright &copy; 2022 by sai krishna datt </p>
+    </body>
+    <script src="index.js"></script>
+</html>
